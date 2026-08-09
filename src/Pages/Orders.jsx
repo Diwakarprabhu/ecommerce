@@ -43,9 +43,9 @@ function Orders() {
                 Products
               </h3>
 
-              {order.items.map((item) => (
+              {order.items.map((item,index) => (
                 <div
-                  key={item.id}
+                  key={index}
                   className="border-b py-2"
                 >
                   <p>
