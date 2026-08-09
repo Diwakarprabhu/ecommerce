@@ -56,4 +56,12 @@
   button {
     width: 100%;
   }
+  .products-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+ .products-grid{
+    grid-template-columns: 1fr;
+  }
 }

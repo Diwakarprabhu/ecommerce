@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <>
     
-    <div className="grid grid-cols-4 gap-6 p-6 ">
+    <div className="grid grid-cols-4 gap-6 p-6 products- ">
        
       {productData.map((data) => (
         <ProductCard
