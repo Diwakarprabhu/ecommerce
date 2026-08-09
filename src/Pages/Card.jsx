@@ -33,12 +33,12 @@ function Card() {
             className="h-24 w-24 object-contain"
           />
 
-          <div className="flex-1">
+          <div  className="product-title">
             <h2 className="font-bold text-lg">
               {item.title}
             </h2>
 
-            <p className="text-green-600">
+            <p className="text-green-600  price">
               ${item.price}
             </p>
 

@@ -1,9 +1,11 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
- 
   font-family: 'Poppins', sans-serif;
 }
+
+/* ===== Desktop ===== */
 .products-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -11,75 +13,97 @@
   padding: 20px;
 }
 
+.product-card{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  transition: 0.3s;
+}
+
+.product-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.product-title{
+  font-size: 18px;
+  min-height: 60px;
+  margin-top: 10px;
+}
+
+.price{
+  font-size: 24px;
+  color: green;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.add-cart-btn{
+  margin-top: auto;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart-btn:hover{
+  background: #1d4ed8;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px){
+  .products-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== Mobile ===== */
 @media (max-width: 768px){
 
-  /* Product Grid - 1 card per row */
   .products-grid{
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 10px;
   }
 
-  /* Product Card */
   .product-card{
-    width: 100%;
+    min-height: auto;
     padding: 12px;
   }
 
   .product-card img{
-    width: 100%;
     height: 180px;
-    object-fit: contain;
   }
 
-  /* Header */
-  .header{
-    padding: 10px 15px;
-  }
-    .header-links{
-    flex-direction: column;
-    gap: 10px;
+  .product-title{
+    font-size: 16px;
+    min-height: auto;
   }
 
-  /* Cart */
-  .cart-item{
-    flex-direction: column;
-    text-align: center;
+  .price{
+    font-size: 20px;
+    margin-top: 300px;
   }
 
-  .cart-item img{
-    width: 120px;
-    margin: auto;
-  }
-
-  /* Checkout */
-  .checkout-container{
-    width: 95%;
-    margin: auto;
-    padding: 15px;
-  }
-
-  /* Orders */
-  .order-card{
-    width: 100%;
-    padding: 15px;
-  }
-   h1{
-    font-size: 15px;
-  }
-
-  h2{
-    font-size: 15px;
-  }
-
-  p{
-    font-size: 14px;
-  }
-
-  /* Buttons */
-  button{
-    width: 100%;
+  .add-cart-btn{
     padding: 10px;
   }
-}
 
+  h1{
+    font-size: 24px;
+  }
+}

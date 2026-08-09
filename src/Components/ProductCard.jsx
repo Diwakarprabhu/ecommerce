@@ -11,11 +11,11 @@ function ProductCard({
     className="h-48 w-full object-contain"
   />
 
-  <h2 className="text-md  mt-4 h-13 ">
+  <h2 className="text-md   mt-10 h-13 ">
     {product.title}
   </h2>
 
-  <p className="text-green-600 text-md mt-10 ">
+  <p className="text-green-600 text-md mt-10 mb-3"> 
     ${product.price}
   </p>
 
