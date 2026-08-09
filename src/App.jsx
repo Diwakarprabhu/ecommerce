@@ -1,7 +1,7 @@
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Card from "./Pages/Card";
-import Checkout from "./Pages/Checkout";
+import Checkout from "./Pages/CheckOut";
 import Orders from "./Pages/Orders";
 
 import { Routes, Route } from "react-router-dom";
